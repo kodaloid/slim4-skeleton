@@ -1,6 +1,6 @@
 # Kodaloid's SlimPHP Skeleton
 
-SlimPHP is becoming more and more useful to me, so I've spent some time building
+[SlimPHP](https://github.com/slimphp/Slim) is becoming more and more useful to me, so I've spent some time building
 this skeleton to improve my production speed. This is a bare bones SlimPHP app
 with ENV settings file loading, twig templates, logging & JWT auth.
 
