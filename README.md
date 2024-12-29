@@ -40,7 +40,7 @@ point the root at the `/public/` folder, you will need to rename the
 things work correctly.
 
 
-## Examle Routes
+## Example Routes
 
 A few test routes have been setup to demo how this works, they are setup in the
 file `/src/routes.php`. The first is the home route at `http://localhost:8080/`
