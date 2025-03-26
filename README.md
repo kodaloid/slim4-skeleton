@@ -22,7 +22,7 @@ mkdir my-app
 cd my-app
 
 # clone this repo
-git clone https://github.com/kodaloid/slim4-skeleton
+git clone https://github.com/kodaloid/slim4-skeleton .
 
 # get composer to prepare dependencies
 composer install
