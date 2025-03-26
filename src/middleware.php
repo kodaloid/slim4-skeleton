@@ -10,6 +10,9 @@ use Slim\Views\Twig;
 use Slim\Views\TwigMiddleware;
 
 
+$app->addErrorMiddleware(true, true, true);
+
+
 // Add Twig-View Middleware
 $twig = Twig::create(__DIR__ . '/../templates', ['cache' => false]);
 $app->add(TwigMiddleware::create($app, $twig));

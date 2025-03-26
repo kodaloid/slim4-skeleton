@@ -16,6 +16,7 @@ global $app;
 $container = new Container();
 AppFactory::setContainer($container);
 $app = AppFactory::create();
+$app->setBasePath("");
 
 // Register dependencies
 require __DIR__ . '/../src/dependencies.php';

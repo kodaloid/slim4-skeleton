@@ -19,6 +19,7 @@ Thumbs.db
 #Slim .gitignore
 /vendor/
 .env
+.todo
 /logs/*
 !/logs/README.md
 

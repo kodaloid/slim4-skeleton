@@ -32,3 +32,12 @@ $container->set('jwt', function($container) {
 	$jws_settings['logger'] = Helpers::getLogger();
   	return new Tuupola\Middleware\JwtAuthentication($jws_settings);
 });
+
+
+// Database via Eloquent
+$container->set('db', function($container) {
+	$config = (object) $container->get('settings')->get('database');
+	$dsn = "mysql:host={$config->host};dbname={$config->database}";
+	$db = new MeekroDB($dsn, $config->username, $config->password);
+	return $db;
+});

@@ -19,3 +19,6 @@ $app->group('/api', function(RouteCollectorProxy $group) {
 	$group->get('/tester', '\App\ApiController:test')->add($jwt)->setName('test');
 	return $group;
 });
+
+
+$app->get('/db-test', '\App\DbController:test')->setName('dbTest');
